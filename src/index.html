@@ -6,7 +6,9 @@
       Portafolio de Lucas Fernandez - Desarrollador y programador Web
     </title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
+  
   <body
     class="min-h-screen font-sans text-gray-100 text-lg font-semibold bg-gradient-to-tr from-[#0a122a] via-[#162a52] to-[#1f3a72]"
   >
@@ -31,8 +33,8 @@
       </div>
 
       <nav class="flex w-1/2 justify-around items-center">
-        <ul class="flex w-1/2 gap-5 justify-around">
-          <li class="flex justify-center items-center gap-2">
+        <ul class="flex gap-5 justify-around">
+          <li class="cursor-pointer flex justify-center items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -48,7 +50,7 @@
 
             <span>Habilidades</span>
           </li>
-          <li class="flex justify-center items-center gap-2">
+          <li class="cursor-pointer flex justify-center items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -66,7 +68,7 @@
 
             <span>Proyectos</span>
           </li>
-          <li class="flex justify-center items-center gap-2">
+          <li class="cursor-pointer flex justify-center items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -84,7 +86,7 @@
 
             <span>Experiencia</span>
           </li>
-          <li class="flex justify-center items-center gap-2">
+          <li class="cursor-pointer flex justify-center items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -104,7 +106,296 @@
           </li>
         </ul>
       </nav>
-      <button>Descargar CV</button>
+
+      <div class="flex w-24 gap-2 justify-center items-center">
+        <img
+          class="object-cover w-[25px]"
+          src="../assets/github-mark-white.png"
+          alt=""
+        />
+        <img
+          class="object-cover w-[30px]"
+          src="../assets/linkedin.png"
+          alt=""
+        />
+      </div>
     </header>
+
+    <!-- MAIN -->
+
+ 
+<section class="w-full py-16 flex flex-col items-center  text-white">
+  <div class="relative mb-12 text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold tracking-wide">
+      TECNOLOGÍAS
+    </h2>
+    <div class="mt-2 h-1 w-24 bg-cyan-400 mx-auto rounded-full"></div>
+  </div>
+
+  <div class="flex flex-col items-center gap-6 w-full px-4 max-w-6xl mx-auto">
+
+    <!-- Nivel 6 -->
+    <div class="flex gap-4" data-aos="fade-up">
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/AWS.png" alt="AWS" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/Azure.png" alt="Azure" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+    </div>
+
+    <!-- Nivel 5 -->
+    <div class="flex gap-4" data-aos="fade-up">
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/Azure Devops.png" alt="Azure DevOps" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/Node.js.png" alt="Node.js" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/PostgresSQL.png" alt="Postgres" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/MongoDB.png" alt="MongoDB" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/MySQL.png" alt="MySQL" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+    </div>
+
+    <!-- Nivel 4 -->
+    <div class="flex gap-4" data-aos="fade-up">
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/React.png" alt="React" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/Electron.png" alt="Electron" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/Express.png" alt="Express" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/Bash.png" alt="Bash" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+    </div>
+
+    <!-- Nivel 3 -->
+    <div class="flex gap-4" data-aos="fade-up">
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/Kubernetes.png" alt="Kubernetes" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/TypeScript.png" alt="TS" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/Angular.png" alt="Angular" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+    </div>
+
+    <!-- Nivel 2 -->
+    <div class="flex gap-4" data-aos="fade-up">
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/Docker.png" alt="Docker" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/Git.png" alt="Git" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+    </div>
+
+    <!-- Nivel 1 -->
+    <div class="flex gap-4" data-aos="fade-up">
+      <div class="group backdrop-blur-sm bg-slate-900/60 p-6 rounded-xl flex items-center justify-center shadow-md hover:scale-105 transition duration-200 ease-in-out">
+        <img src="../assets/Nest.js.png" alt="Nest.js" class="w-16 h-16 object-contain group-hover:scale-110 transition duration-150" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <section class="w-full max-w-6xl mx-auto py-12 px-4">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-extrabold text-white tracking-wide">
+          EXPERIENCIA
+        </h2>
+        <div class="mt-2 h-1 w-24 bg-cyan-400 mx-auto rounded-full"></div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <!-- LegalRun -->
+        <article
+          class="backdrop-blur-sm bg-slate-900/60 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-200 flex flex-col md:flex-row md:items-center gap-4"
+        >
+          <div class="flex items-center gap-4 md:w-1/3">
+            <!-- Logo acá -->
+            <div
+              class="w-16 h-16 bg-gray-700 rounded-md flex justify-center items-center text-white font-bold text-xl"
+            >
+            <img src="https://media.licdn.com/dms/image/v2/D4D0BAQHepoB92q6_xg/company-logo_100_100/company-logo_100_100/0/1736345496249/legalrun_logo?e=1755129600&v=beta&t=JZ3e4houARujAlIblOn8e6Io-k4He122Ic2_h_eBDOU" class="object-cover rounded-md" alt="">
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-white">LegalRun</h3>
+              <p class="text-cyan-400 text-sm">
+                Desarrollador Full Stack | Semi senior
+              </p>
+              <p class="text-gray-300 text-xs italic">
+                Agosto 2024 - Actualidad
+              </p>
+              <p class="text-gray-300 italic mt-1">Gestión de casos legales</p>
+            </div>
+          </div>
+
+          <div class="md:w-2/3 text-gray-300 mt-4 md:mt-0">
+            <p class="mb-2">
+              Tecnologías:
+              <strong
+                >Angular, NestJS, TypeORM, Azure, PostgreSQL, AWS, Docker, Git,
+                TypeScript, Web Sockets</strong
+              >
+            </p>
+            <p class="mb-2 text-sm">
+              También cumplo el rol de Diseñador UX/UI.
+            </p>
+            <p class="text-sm">
+              Me ocupo del backend con NestJS y TypeORM, creando APIs REST
+              eficientes y seguras. En el frontend desarrollo interfaces
+              responsivas con Angular. Manejo contenedores Docker y despliegues
+              en Azure y AWS para garantizar disponibilidad y escalabilidad.
+            </p>
+          </div>
+        </article>
+
+        <!-- Data Entry -->
+        <article
+          class="backdrop-blur-sm bg-slate-900/60 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-200 flex flex-col md:flex-row md:items-center gap-4"
+        >
+          <div class="flex items-center gap-4 md:w-1/3">
+            <!-- Logo acá -->
+            <div
+              class="w-16 h-16 bg-gray-700 rounded-md flex justify-center items-center text-white font-bold text-xl"
+            >
+             <img src="https://mecanizado.com.ar/wp-content/uploads/2024/04/3.png" alt="">
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-white">
+                Mecanizado Ituzaingó S.A
+              </h3>
+              <p class="text-cyan-400 text-sm">Data Entry - Jornada parcial</p>
+              <p class="text-gray-300 text-xs italic">
+                Marzo 2023 - Diciembre 2023
+              </p>
+            </div>
+          </div>
+
+          <div class="md:w-2/3 text-gray-300 mt-4 md:mt-0">
+            <p class="text-sm">
+              Responsable de la administración y optimización de datos de
+              producción en máquinas CNC, asegurando precisión y eficiencia.
+              Gestioné horarios de empleados y desarrollé informes automatizados
+              y plantillas avanzadas en Excel para mejorar la productividad y la
+              toma de decisiones.
+            </p>
+          </div>
+        </article>
+
+        <!-- Freelancer -->
+        <article
+          class="backdrop-blur-sm bg-slate-900/60 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-200"
+        >
+          <h3 class="text-xl font-semibold text-white">Freelancer</h3>
+          <p class="text-cyan-400 text-sm mb-2">Marzo 2022 - Agosto 2024</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="flex justify-center items-center w-full min-h-screen p-4">
+      <div
+        class="w-full max-w-2xl flex flex-col gap-6 backdrop-blur-sm bg-slate-900/60 p-8 rounded-xl shadow-xl"
+      >
+        <!-- Información de contacto -->
+        <div class="text-start text-white space-y-2">
+          <div class="flex items-center gap-2">
+            <div class="w-5 h-5">
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Gmail</title>
+                <path
+                  d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            <p class="text-sm">flucasyoel@outlook.es</p>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <img
+              src="../assets/github-mark-white.png"
+              alt="GitHub"
+              class="w-5 h-5"
+            />
+            <p class="text-sm m-0">github.com/</p>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <img src="../assets/linkedin.png" alt="LinkedIn" class="w-5 h-5" />
+            <p class="text-sm m-0">linkedin.com/in/lucas-fernandez-b32304280</p>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 w-full">
+          <input
+            class="md:col-span-6 w-full px-4 py-2 rounded-md bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Nombre"
+            type="text"
+          />
+          <input
+            class="md:col-span-6 w-full px-4 py-2 rounded-md bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Email"
+            type="email"
+          />
+          <textarea
+            class="md:col-span-12 w-full h-32 px-4 py-2 rounded-md bg-white/10 text-white placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Mensaje"
+          ></textarea>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="w-full bg-slate-900/60 backdrop-blur-sm text-white py-6 mt-12"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <!-- Nombre o marca -->
+        <div class="text-center md:text-left">
+          <p class="text-lg font-semibold">Lucas Yoel</p>
+          <p class="text-sm text-gray-400">
+            Desarrollador Web • Buenos Aires, Argentina
+          </p>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-sm text-gray-500 text-center md:text-right">
+          &copy; 2025 Lucas Yoel. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 600,
+    once: true,
+    easing: 'ease-in-out',
+  });
+</script>
   </body>
+  
 </html>
