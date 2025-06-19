@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body
+    class="min-h-screen flex justify-between items-center flex-col font-sans text-gray-100 text-lg font-semibold bg-gradient-to-tr from-[#0a122a] via-[#162a52] to-[#1f3a72]"
+  >
+    <!-- Botón flotante para volver -->
+    <div
+      data-aos="fade-up"
+      class="fixed top-6 left-6 z-50 w-12 h-12 rounded-full bg-slate-900/80 text-white flex items-center justify-center shadow-lg backdrop-blur-md cursor-pointer hover:bg-slate-800 transition-all duration-300"
+      onclick="window.history.back()"
+      title="Volver"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7"
+        />
+      </svg>
+    </div>
+
+    <section
+      data-aos="fade-up"
+      class="flex justify-center items-center w-full h-screen px-4"
+    >
+      <div
+        class="relative w-full max-w-2xl flex flex-col gap-6 backdrop-blur-sm bg-slate-900/60 p-8 rounded-xl shadow-xl"
+      >
+        <!-- Loader -->
+        <div
+          id="map-loader"
+          class="flex justify-center items-center h-[450px] w-[600px] absolute z-10 rounded-xl"
+        >
+          <div
+            class="animate-spin rounded-full h-12 w-12 border-t-4 border-white border-opacity-50"
+          ></div>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52505.49447283626!2d-58.77563125136718!3d-34.66496999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf86ef457285%3A0xd8055b178c177d4c!2sUniversidad%20Nacional%20del%20Oeste!5e0!3m2!1ses-419!2sar!4v1749752054329!5m2!1ses-419!2sar"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          onload="document.getElementById('map-loader').style.display = 'none';"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="w-full bg-slate-900/60 backdrop-blur-sm text-white py-6">
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+    
+        <div class="text-center md:text-left">
+          <p class="text-lg font-semibold">Lucas Fernandez</p>
+          <p class="text-sm text-gray-400">
+            Desarrollador Web • Buenos Aires, Argentina
+          </p>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-sm text-gray-500 text-center md:text-right">
+          &copy; 2025 Lucas Fernandez. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      function redirectMaps() {
+        window.location.href = "./map.html";
+      }
+
+      function redirectWhatsapp() {
+        window.location.href =
+          "https://api.whatsapp.com/send/?phone=1130773485&text=Hola!%21&type=phone_number&app_absent=0";
+      }
+      AOS.init({
+        duration: 600,
+        once: true,
+        easing: "ease-in-out",
+      });
+    </script>
+  </body>
+</html>
